@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\WeatherController;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,5 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-
-});
+Route::get('/', [WeatherController::class, 'index']);
+Route::get('/refresh-weather', [WeatherController::class, 'refreshWeather']);

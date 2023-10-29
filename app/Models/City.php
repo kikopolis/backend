@@ -9,7 +9,10 @@ class City extends Model {
     protected $fillable = [
         'name',
         'weather_city_id',
-        'country_id',
+    ];
+    
+    protected $with = [
+        'country',
     ];
     
     public function country(): BelongsTo {

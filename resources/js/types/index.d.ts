@@ -10,3 +10,15 @@ export type PageProps<T extends Record<string, unknown> = Record<string, unknown
         user: User;
     };
 };
+
+export interface WeatherDto {
+    cityName: string;
+    countryName: string;
+    languageName: string;
+    temperature: string;
+    weatherCode: string;
+    sunrise: string;
+    sunset: string;
+    weatherImage: string | null;
+    conditions: string | null;
+}
