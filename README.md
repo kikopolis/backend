@@ -1,3 +1,4 @@
+# rename .env.rename to .env
 # composer install
 # ./vendor/bin/sail up -d && ./vendor/bin/sail shell 
 # npm install && npm run dev
